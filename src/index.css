@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  /* background-color: rgb(43, 43, 43); */
+  /* background-color: rgba(0, 2, 29, 0.942); */
+  /* background-color: #002e63; */
+  background-color: #1f305e;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+form {
+  /* border: 1px solid purple; */
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 50%;
+}
+input {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+label {
+  font-size: 19px;
+  color: white;
+}
+
+table {
+  padding: 10px;
+  width: 60%;
+}
+th {
+  padding: 15px 25px;
+}
+
+td {
+  padding: 10px 20px;
+  background-color: #2222;
+  color: white;
+  font-size: 19px;
+}
+.row {
+  /* background-color: white; */
+  border: 1px solid;
+}
+.submit {
+  background-color: rgb(3, 168, 63);
+  width: fit-content;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.edit {
+  background-color: rgb(182, 182, 0);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+}
+
+.delete {
+  background-color: rgb(188, 3, 3);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+}
+.err-msg {
+  color: red;
+}
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+  }
 }
